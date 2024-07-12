@@ -57,7 +57,7 @@ spec:
               subPath: application-secrets.yml
           livenessProbe:
             tcpSocket:
-              port: management
+              port: http
             timeoutSeconds: 1
             periodSeconds: 10
             successThreshold: 1
@@ -65,7 +65,7 @@ spec:
           readinessProbe:
             httpGet:
               path: /health
-              port: management
+              port: http
               scheme: HTTP
             timeoutSeconds: 1
             periodSeconds: 10
