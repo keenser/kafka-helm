@@ -43,7 +43,7 @@ data:
   ZK_ELECTION_PORT: "3888"
   ZK_REPLICAS: "1"
 ---
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: zookeeper-budget
